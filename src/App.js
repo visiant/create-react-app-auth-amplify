@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
@@ -45,7 +44,7 @@ const App = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Amplify Todos</h2>
+      <h2>Amplify Todos List</h2>
       <input
         onChange={event => setInput('name', event.target.value)}
         style={styles.input}
@@ -79,8 +78,6 @@ const styles = {
   todoDescription: { marginBottom: 0 },
   button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
 }
-
-
 
 // class App extends Component {
 //   render() {
